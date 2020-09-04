@@ -19,7 +19,7 @@ containerTemplate(name: 'kubectl', image: 'roffe/kubectl', command: 'cat', ttyEn
 
 		// #1 Github 소스 가져오기
 		stage('Get Source') {
-		git credentialsId: '{GITHUB Credential ID}', url: '{GITHUB URL}', branch: 'master'
+		git credentialsId: '{github-lab03}', url: '{GITHUB URL}', branch: 'master'
 		}
 		// #2 Properties 파일 읽기		
 		def props = readProperties file:"./kubernetes/pipeline.properties"
