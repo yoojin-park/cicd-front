@@ -52,7 +52,7 @@ containerTemplate(name: 'kubectl', image: 'roffe/kubectl', command: 'cat', ttyEn
 		-Dsonar.projectName=${sonarQubeProject} \
 		-Dsonar.projectKey=${sonarQubeProject} \
 		-Dsonar.host.url=${sonarQubeURL} \
-		-Dsonar.projectBaseDir=./”
+		-Dsonar.projectBaseDir=./"
 		}
 		}
 		// #5 컨테이너 이미지 생성 Stage
